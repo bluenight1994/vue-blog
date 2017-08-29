@@ -8,17 +8,13 @@
             I am like a drop in the ocean.
           </div>
           <mu-list @change="handleListChange" :value="activeList">
-            <mu-list-item title="Intro" value="list1" >
-              
-            </mu-list-item>
-            <mu-list-item title="Articles" value="list2">
-              
+              <router-link to="/"><mu-list-item title="Intro" value="list1"></mu-list-item></router-link>
+              <router-link to="/blog"><mu-list-item title="Blog" value="list2"></mu-list-item></router-link>
             </mu-list-item>
           </mu-list>
         </div>
 
         <div class="content-right">
-          <img src="./assets/Manhattan_Skyline_night.jpg">
           <router-view></router-view>
         </div>
       </div>
